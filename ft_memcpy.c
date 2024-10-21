@@ -17,11 +17,11 @@ void    *ft_memcpy(void *dest, const void *src, size_t n)
 /*
 int     main(void)
 {
-	char    dest[10] = "uva";
-	char    *src = "b";
-	ft_memcpy(dest, src, 1);
+	char    dest[10] = "maca";
+	char    *src = "banana";
+	ft_memcpy(dest, src, 2);
 	printf("Meu: %s\n", dest);
-	//printf("Original %s", (char *)memcpy(dest, src, 1));
+	printf("Original %s", (char *)memcpy(dest, src, 1));
 	return (0);
 }
 */
