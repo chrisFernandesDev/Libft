@@ -21,6 +21,7 @@ char	*ft_strchr(const char *s, int c)
 	int	i;
 
 	i = 0;
+	c = (unsigned char)c;
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
@@ -29,13 +30,15 @@ char	*ft_strchr(const char *s, int c)
 		}
 		i++;
 	}
+	if (s[i] == c)
+		return ((char *) &s[i]);
 	return (NULL);
 }
 /*
 int	main(void)
 {
 	const	char *s = "42Porto";
-	char	c = 'e';
+	char	c = 'P';
 	printf("%s", ft_strchr(s, c));
 	return (0);
 }

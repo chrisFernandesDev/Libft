@@ -12,30 +12,36 @@
 
 #include "libft.h"
 
+/*
+	Returns a pointer to the first occurrence, the function returns NULL
+	if the specified charater is not found. Equal strchr(), but finds the last occurrence of c
+*/
 char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 	char	*result;
 
 	i = 0;
+	c = (unsigned char)c;
 	result = NULL;
+	if (s == NULL)
+		return (NULL);
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
-		{
 			result = ((char *) &s[i]);
-		}
 		i++;
 	}
+	if (s[i] == c)
+		return ((char *) &s[i]);
 	return (result);
 }
-
+/*
 int	main(void)
 {
 	const	char *s = "42Porto";
-	char	c = 'o';
+	char	c = 'P';
 	printf("%s", ft_strrchr(s, c));
 	return (0);
 }
-
-//Arrumar este codigo
+*/
