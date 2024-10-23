@@ -1,5 +1,8 @@
 #include "libft.h"
-
+/*
+	Compares memory blocks byte by byte. It can be used to compare any data type, not just strings. 
+	It is ideal for comparing byte arrays, structs or any other arbitrary memory area. (Memory Compare)
+*/
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t	i;
@@ -9,7 +12,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	str1 = (unsigned char *)s1;
 	str2 = (unsigned char *)s2;
 	i = 0;
-	while ((str1[i] != '\0' || str2[i] != '\0') && i < n)
+	while (i < n)
 	{
 		if (str1[i] != str2[i])
 			return (str1[i] - str2[i]);

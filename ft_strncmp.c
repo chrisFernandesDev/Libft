@@ -1,9 +1,8 @@
 #include "libft.h"
-
 /*
 	Function that compares each character by its corresponding ASCII values
 	return 0 equals s1 and s2 in n, if the bytes are different, return the difference
-	between the two characters.
+	between the two characters. (String Compare)
 */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
