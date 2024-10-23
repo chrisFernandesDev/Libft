@@ -2,6 +2,8 @@
 
 /*
 	Function that compares each character by its corresponding ASCII values
+	return 0 equals s1 and s2 in n, if the bytes are different, return the difference
+	between the two characters.
 */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
@@ -16,7 +18,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		}
 		i++;
 	}
-	return 0;
+	return (0);
 }
 /*
 int	main(int argc, char **argv)
