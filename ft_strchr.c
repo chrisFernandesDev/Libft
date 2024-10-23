@@ -11,10 +11,9 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
 /* 
 	Returns a pointer to the first occurrence, the function returns NULL
-	if the specified charater is not found
+	if the specified charater is not found.
 */
 char	*ft_strchr(const char *s, int c)
 {

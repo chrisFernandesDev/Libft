@@ -24,15 +24,14 @@ char	*ft_strrchr(const char *s, int c)
 	i = 0;
 	c = (unsigned char)c;
 	result = NULL;
-	if (s == NULL)
-		return (NULL);
+
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
 			result = ((char *) &s[i]);
 		i++;
 	}
-	if (s[i] == c)
+	if (c == '\0')
 		return ((char *) &s[i]);
 	return (result);
 }
