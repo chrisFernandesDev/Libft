@@ -6,25 +6,26 @@
 /*   By: cmaciel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 16:01:49 by cmaciel-          #+#    #+#             */
-/*   Updated: 2024/10/21 16:19:55 by cmaciel-         ###   ########.fr       */
+/*   Updated: 2024/10/25 14:46:27 by cmaciel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-	Returns a pointer to the first occurrence, the function returns NULL
-	if the specified charater is not found. Equal strchr(), but finds the last occurrence of c
+	Returns a pointer to the first occurrence,
+	the function returns NULL
+	if the specified charater is not found. 
+	Equal strchr(), but finds the last occurrence of c
 */
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
 	char	*result;
+	int		i;
 
 	i = 0;
 	c = (unsigned char)c;
 	result = NULL;
-
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)

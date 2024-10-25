@@ -1,17 +1,30 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cmaciel- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/25 11:30:35 by cmaciel-          #+#    #+#             */
+/*   Updated: 2024/10/25 11:40:25 by cmaciel-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 /*
 	Function that is used to dynamically allocate memory, but with an important 
-	difference: in addition to allocating memory, it also initializes all bytes to zero
+	difference: in addition to allocating memory, 
+	it also initializes all bytes to zero
 */
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	size_t	i;
 	unsigned char	*tmp;
+	size_t			i;
 
 	i = 0;
 	tmp = (unsigned char *)malloc((nmemb * size));
 	if (tmp == NULL)
-		return NULL;
+		return (NULL);
 	while (i < nmemb * size)
 	{
 		tmp[i] = 0;

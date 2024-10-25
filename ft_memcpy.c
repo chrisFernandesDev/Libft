@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cmaciel- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/25 11:32:00 by cmaciel-          #+#    #+#             */
+/*   Updated: 2024/10/25 11:32:00 by cmaciel-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void    *ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t		i;
+	size_t	i;
 
 	i = 0;
 	if (dest == NULL && src == NULL)
@@ -15,10 +27,10 @@ void    *ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 /*
-int     main(void)
+int	main(void)
 {
-	char    dest[10] = "maca";
-	char    *src = "banana";
+	char	dest[10] = "maca";
+	char	*src = "banana";
 	ft_memcpy(dest, src, 2);
 	printf("Meu: %s\n", dest);
 	printf("Original %s", (char *)memcpy(dest, src, 1));

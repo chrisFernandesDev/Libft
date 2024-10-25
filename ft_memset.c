@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cmaciel- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/25 11:32:09 by cmaciel-          #+#    #+#             */
+/*   Updated: 2024/10/25 11:32:09 by cmaciel-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void    *ft_memset(void *s, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*tmp_ptr;
 
@@ -13,7 +25,7 @@ void    *ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 /*
-int     main(void)
+int	main(void)
 {
 	char str[10];
 	int	s = 'a';

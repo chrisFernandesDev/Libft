@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cmaciel- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/25 11:33:19 by cmaciel-          #+#    #+#             */
+/*   Updated: 2024/10/25 11:33:19 by cmaciel-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 /*
 	its purpose is to apply a function to each character in a string, 
@@ -11,15 +23,15 @@ char	ft_strtemp(unsigned int c, char s)
 	return (s);
 }
 */
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
-	char	*str;
+	char			*str;
 
 	i = 0;
 	str = (char *)malloc((ft_strlen(s) + 1) * sizeof(char));
 	if (str == NULL)
-		return NULL;
+		return (NULL);
 	while (i < ft_strlen(s))
 	{
 		str[i] = (*f)(i, s[i]);
