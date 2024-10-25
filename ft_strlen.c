@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cmaciel- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/25 11:33:15 by cmaciel-          #+#    #+#             */
+/*   Updated: 2024/10/25 11:33:15 by cmaciel-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-size_t		ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -10,7 +22,7 @@ size_t		ft_strlen(const char *str)
 	return (i);
 }
 /*
-int     main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	(void)argc;
 	printf("%d", ft_strlen(argv[1]));

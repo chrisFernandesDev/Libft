@@ -1,12 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cmaciel- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/25 11:31:45 by cmaciel-          #+#    #+#             */
+/*   Updated: 2024/10/25 11:31:45 by cmaciel-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 /*
-	Responsible for converting an integer (int) into a string (or string of characters)
+	Responsible for converting an integer (int) into 
+	a string (or string of characters)
 */
 
-int	ft_intlen(int	n)
+int	ft_intlen(int n)
 {
-	int	i;
 	long	nbr;
+	int		i;
 
 	i = 0;
 	nbr = n;
@@ -22,20 +35,20 @@ int	ft_intlen(int	n)
 		nbr = nbr / 10;
 		i++;
 	}
-	return (i);	
+	return (i);
 }
 
 char	*ft_itoa(int n)
 {
-	int	len;
 	long	nbr;
 	char	*str;
+	int		len;
 
 	nbr = n;
 	len = ft_intlen(n);
 	str = (char *)malloc((len + 1) * sizeof(char));
 	if (!str)
-		return NULL;
+		return (NULL);
 	str[len] = '\0';
 	if (nbr == 0)
 		str[0] = '0';
@@ -49,7 +62,7 @@ char	*ft_itoa(int n)
 		str[--len] = (nbr % 10) + 48;
 		nbr = nbr / 10;
 	}
-	return(str);
+	return (str);
 }
 /*
 int	main(void)
