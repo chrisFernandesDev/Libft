@@ -21,29 +21,36 @@ SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 		ft_strnstr.c ft_atoi.c \
 		ft_calloc.c ft_strdup.c \
 		ft_putchar_fd.c ft_putnbr_fd.c ft_putstr_fd.c ft_putendl_fd.c \
-		ft_striteri.c ft_strmapi.c ft_itoa.c
+		ft_striteri.c ft_strmapi.c ft_itoa.c ft_substr.c ft_strjoin.c \
+		ft_strtrim.c ft_split.c
+
+SRC_BONUS = ft_lstnew.c
 
 OBJ = $(SRC:.c=.o)
+OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 ## Set the compiler and compilation flags ##
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-##AR    = ar 
-##ARFLAGS    = -rcs
+AR    = ar 
+ARFLAGS    = -rcs
 
 ## Rule all ##
 all: $(NAME)
 
-$(NAME): $(OBJ) 
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
-##$(NAME): $(OBJ)
-##	$(AR)  $(ARFLAGS) $(NAME) $(OBJ)
+$(NAME): $(OBJ)
+	$(AR)  $(ARFLAGS) $(NAME) $(OBJ)
 
-##%.o: %.c
-##	$(CC) $(CFLAGS) -c $< -o $@
+## Bonus part
+bonus: $(OBJ) $(OBJ_BONUS)
+	$(AR) $(ARFLAGS) $(NAME) $(OBJ_BONUS)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
 ## Clean rule ##
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(OBJ_BONUS)
 
 ## Fclean rule ##
 fclean: clean
@@ -53,4 +60,4 @@ fclean: clean
 re: fclean all
 
 ## Phone rule ##
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
