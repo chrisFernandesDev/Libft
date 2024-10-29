@@ -2,6 +2,7 @@
 /*
 	Função itera sobre toda a lista e aplica a função 'f' ao conteúdo de cada elemento
 */
+/*
 void	ft_strtemp(void *s)
 {
 	char *c;
@@ -14,7 +15,7 @@ void	ft_strtemp(void *s)
 		c++; 
 	}
 }
-
+*/
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*temp;
@@ -28,7 +29,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		temp = temp->next;
 	}
 }
-
+/*
 int	main(void)
 {
 	t_list	*list = ft_lstnew(ft_strdup("banana"));
@@ -43,7 +44,6 @@ int	main(void)
 		temp = temp->next;
 	}
 	t_list	*lst = list;
-	lst = list->next;
 	ft_lstiter(lst, ft_strtemp);
 	printf("\nLista depois com a adição da função:\n");
 	while (lst)
@@ -53,3 +53,4 @@ int	main(void)
 	}
 	return (0);
 }
+*/
