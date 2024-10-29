@@ -6,7 +6,7 @@
 /*   By: cmaciel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 15:18:56 by cmaciel-          #+#    #+#             */
-/*   Updated: 2024/10/25 15:57:16 by cmaciel-         ###   ########.fr       */
+/*   Updated: 2024/10/29 19:40:51 by cmaciel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 /*
 int	main(void)
 {
-	char	str[] = "Eu sou 42Porto, happy! :D\n";
-	printf("%s", ft_substr(str, 3, 26));
+	char	*str = "Eu sou 42Porto, happy! :D\n";
+	printf("%s", ft_substr(str, 3, 11));
 	return (0);
 }
 */
