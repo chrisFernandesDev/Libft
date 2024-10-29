@@ -1,6 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cmaciel- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/29 19:24:32 by cmaciel-          #+#    #+#             */
+/*   Updated: 2024/10/29 19:24:32 by cmaciel-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 /*
-	Função itera sobre toda a lista e aplica a função 'f' ao conteúdo de cada elemento
+	Função itera sobre toda a lista e aplica a função 
+	'f' ao conteúdo de cada elemento
 */
 /*
 void	ft_strtemp(void *s)
