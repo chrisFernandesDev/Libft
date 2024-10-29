@@ -16,6 +16,8 @@
 */
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
+	if (!lst || !new)
+		return ;
 	new->next = *lst;
 	*lst = new;
 }
@@ -33,3 +35,5 @@ int	main(void)
 	return (0);
 }
 */
+
+//Arrumar este código, adicionar o ft_strdup
