@@ -12,8 +12,8 @@
 
 #include "libft.h"
 /*
-	its purpose is to apply a function to each character in a string, 
-	resulting in a new string
+	Seu objetivo é aplicar uma função a cada caractere
+	de uma string, resultando em uma nova string
 */
 /*
 char	ft_strtemp(unsigned int c, char s)

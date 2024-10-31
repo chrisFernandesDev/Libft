@@ -11,7 +11,9 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*
+	Esta função escreve n (tamanho) no valor c na string s.
+*/
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*tmp_ptr;

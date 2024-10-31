@@ -13,8 +13,8 @@
 #include "libft.h"
 
 /* 
-	Checks if a char is digit
-	returns 1 if true, 0 if false 
+	Verifica se um caractere é um dígito
+	retorna 1 se verdadeiro, 0 se falso
 */
 int	ft_isdigit(int n)
 {

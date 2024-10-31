@@ -12,10 +12,11 @@
 
 #include "libft.h"
 /*
-	Compares memory blocks byte by byte. It can be used 
-	to compare any data type, not just strings. 
-	It is ideal for comparing byte arrays, structs or 
-	any other arbitrary memory area. (Memory Compare)
+	Compara blocos de memória byte por byte. Pode ser usado 
+	para comparar qualquer tipo de dados, não apenas strings. 
+	É ideal para comparar matrizes de bytes, estruturas ou 
+	qualquer outra área de memória arbitrária. (Comparação de 
+	memória)
 */
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

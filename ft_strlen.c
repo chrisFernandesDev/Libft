@@ -11,7 +11,10 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*
+	retorna o número de caracteres antes do caractere de
+	terminação NULl( \0) da string
+*/
 size_t	ft_strlen(const char *str)
 {
 	int	i;

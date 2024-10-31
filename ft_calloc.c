@@ -12,9 +12,9 @@
 
 #include "libft.h"
 /*
-	Function that is used to dynamically allocate memory, but with an important 
-	difference: in addition to allocating memory, 
-	it also initializes all bytes to zero
+	Função que é usada para alocar memória dinamicamente, 
+	mas com uma função importante diferença: além de alocar 
+	memória, ele também inicializa todos os bytes para zero
 */
 void	*ft_calloc(size_t nmemb, size_t size)
 {

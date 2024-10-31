@@ -12,7 +12,7 @@
 
 #include "libft.h"
 /*
-	The function converts a string to its representation.
+	A função converte uma string em inteiro
 */
 int	ft_atoi(const char *nptr)
 {

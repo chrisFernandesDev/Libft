@@ -12,7 +12,7 @@
 
 #include "libft.h"
 /*
-	Function that writes a character
+	Função que escreve um caractere
 */
 void	ft_putchar_fd(char c, int fd)
 {

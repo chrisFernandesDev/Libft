@@ -11,7 +11,9 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*
+	Função copia no máximo n bytes de src para dest.
+*/
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t	i;

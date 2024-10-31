@@ -11,7 +11,11 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*
+	Função faz a mesma coisa que a memcpy()
+	função, mas, dessa vez, a cópia é feita, 
+	como dito no man, de uma maneira não destrutiva.
+*/
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	if (dest == NULL && src == NULL)

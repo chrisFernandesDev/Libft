@@ -12,8 +12,8 @@
 
 #include "libft.h"
 /*
-	Convert an integer n to characters (digits) and write these characters 
-	to the fd file descriptor
+	Converte um número inteiro n em caracteres (dígitos) 
+	e escreva esses caracteres para o fd
 */
 void	ft_putnbr_fd(int n, int fd)
 {

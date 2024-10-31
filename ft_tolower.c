@@ -6,12 +6,14 @@
 /*   By: cmaciel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 11:33:53 by cmaciel-          #+#    #+#             */
-/*   Updated: 2024/10/25 14:31:02 by cmaciel-         ###   ########.fr       */
+/*   Updated: 2024/10/31 11:30:24 by cmaciel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*
+	Esta funcao retorta o char minusculo
+*/
 int	ft_tolower(int c)
 {
 	if (c >= 65 && c <= 90)
