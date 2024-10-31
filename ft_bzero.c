@@ -11,7 +11,10 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*
+	Esta função escreve n (tamanho) no valor c na string s.
+	Com a diferenca que sempre sera 0.
+*/
 void	ft_bzero(void *s, size_t n)
 {
 	ft_memset(s, '\0', n);

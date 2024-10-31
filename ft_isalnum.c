@@ -11,7 +11,10 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*
+	Retorna 1 se o valor for alfabetico ou numerico 
+	e 0 se o valor nao for alfabetico ou numerico.
+*/
 int	ft_isalnum(int c)
 {
 	if ((c >= 'a' && c <= 'z')

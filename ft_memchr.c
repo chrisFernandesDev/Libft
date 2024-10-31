@@ -13,7 +13,8 @@
 #include "libft.h"
 
 /*
-	Function searches for a character in a string, and works with byte strings
+	A função procura um caractere em uma string e 
+	trabalha com strings de bytes
 */
 void	*ft_memchr(const void *s, int c, size_t n)
 {

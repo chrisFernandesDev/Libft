@@ -12,7 +12,8 @@
 
 #include "libft.h"
 /*
-	Function that writes a string and add a newline in final
+	Função que escreve uma string e adiciona uma 
+	nova linha no final
 */
 void	ft_putendl_fd(char *s, int fd)
 {

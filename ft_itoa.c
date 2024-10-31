@@ -12,8 +12,8 @@
 
 #include "libft.h"
 /*
-	Responsible for converting an integer (int) into 
-	a string (or string of characters)
+	Responsável por converter um inteiro (int) em 
+	uma string (ou sequência de caracteres)
 */
 
 int	ft_intlen(int n)

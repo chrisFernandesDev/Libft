@@ -11,7 +11,10 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*
+	Verifica se um caractere é printavel
+	retorna 1 se verdadeiro, 0 se falso
+*/
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)

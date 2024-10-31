@@ -6,12 +6,14 @@
 /*   By: cmaciel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 11:33:56 by cmaciel-          #+#    #+#             */
-/*   Updated: 2024/10/25 14:29:52 by cmaciel-         ###   ########.fr       */
+/*   Updated: 2024/10/31 11:30:57 by cmaciel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*
+	Esta funcao retorta o char maisculo
+*/
 int	ft_toupper(int c)
 {
 	if (c >= 97 && c <= 122)

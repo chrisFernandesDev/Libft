@@ -11,7 +11,10 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*
+	concatena duas strings, mas com um pequeno porém,
+	ela sempre termina a string com NULL
+*/
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;

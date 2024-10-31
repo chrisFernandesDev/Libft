@@ -11,7 +11,10 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/*
+	Retorna 1 se o valor for entre 0 e 127 da tabela 
+	ASCII, e 0 se for outros comandos
+*/
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)

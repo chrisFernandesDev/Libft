@@ -12,10 +12,10 @@
 
 #include "libft.h"
 /*
-	This function is used to duplicate a string, 
-	it dynamically allocates memory to 
-	store a copy of a string given as input and returns 
-	a pointer to this new string.
+	Esta função é usada para duplicar uma string, 
+	ela aloca memória dinamicamente para 
+	armazena uma cópia de uma string dada como entrada e 
+	retorna um ponteiro para esta nova string.
 */
 char	*ft_strdup(const char *s)
 {

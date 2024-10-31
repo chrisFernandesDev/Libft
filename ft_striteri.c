@@ -12,7 +12,7 @@
 
 #include "libft.h"
 /*
-	This apply a function to each character in a string
+	Isso aplica uma função a cada caractere em uma string
 */
 
 /*

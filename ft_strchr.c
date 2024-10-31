@@ -6,14 +6,15 @@
 /*   By: cmaciel- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 14:37:35 by cmaciel-          #+#    #+#             */
-/*   Updated: 2024/10/25 11:32:49 by cmaciel-         ###   ########.fr       */
+/*   Updated: 2024/10/31 11:20:09 by cmaciel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 /* 
-	Returns a pointer to the first occurrence, the function returns NULL
-	if the specified charater is not found.
+	Retorna um ponteiro para a primeira ocorrência,
+	a função retorna NULL se o caractere especificado
+	não for encontrado.
 */
 char	*ft_strchr(const char *s, int c)
 {

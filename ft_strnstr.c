@@ -12,9 +12,9 @@
 
 #include "libft.h"
 /*
-	The function find a substring within a string, 
-	but limiting the search to a specific
-	number of characters.
+	A função encontra uma substring dentro de uma string, 
+	mas limitando a pesquisa a um específico
+	número de caracteres.
 */
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
